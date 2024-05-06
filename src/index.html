@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaVie</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/modal.css">
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="page-nav">
+        <div class="logo-container"> 
+          <img src="./img/logo-heder.jpg" alt="Логотип LaVie" width="31" height="31" class="logo">
+          <a href="./index.html" class="logo-name link">La Vie</a>
+        </div>
+        <ul class="nav-list list">
+          <li><a class="nav-menu link" href="#">Каталог</a></li>
+          <li><a class="nav-menu link" href="#">Spring Collection</a></li>
+          <li><a class="nav-menu link" href="#">Новинки</a></li>
+          <li><a class="nav-menu link" href="#">Sale</a></li>
+          <li><a class="nav-menu link" href="#">О нас</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <ul class="nav-icons list">
+          <li class="link"><svg width="17" height="17"><use href="./img/icons.svg#icon-whatsapp"></use></svg></li>
+          <li class="link"><svg width="17" height="17"><use href="./img/icons.svg#icon-search"></use></svg></li>
+          <li class="link"><svg width="17" height="17"><use href="./img/icons.svg#icon-personal"></use></svg></li>
+        </ul>
+      </div>
+      <div class="basket">
+        <svg width="20" height="20"><use href="./img/icons.svg#icon-big-basket"></use></svg>
+      </div>
+    </div>
+  </header>
+
+      <main>
+
+        <section class="slider">
+          <div class="slides">
+            <div class="slide slide1">
+              <img src="./img/Hero/hero1_2x.jpg" alt="plisse" width="1248" height="488">
+              <div class="slide-caption-container">
+                <p class="caption1">New collection</p>
+              </div>
+            </div>
+            <div class="slide slide2">
+              <img src="./img/Hero/hero2_2x.jpg" alt="shine-collection" width="1248" height="488">
+              <div class="slide-caption-container">
+                <p class="caption2">Shine<br>Collection</p>
+              </div>
+            </div>
+            <div class="slide slide3">
+              <img src="./img/Hero/hero3_2x.jpg" alt="blouse" width="1248" height="488">
+              <div class="slide-caption-container">
+                <p class="caption3">БЛУЗЫ</p>
+              </div>
+            </div>
+            <div class="slide slide4">
+              <img src="./img/Hero/hero4_2x.jpg" alt="new-collection" width="1248" height="488">
+              <div class="slide-caption-container">
+                <p class="caption4">Комфортные новинки <br> на каждый день</p>
+              </div>
+            </div>
+            <div class="slide slide5">
+              <img src="./img/Hero/hero5_2x.jpg" alt="plisse" width="1248" height="488">
+              <div class="slide-caption-container">
+                <p class="caption5">Ваш идеальный образ</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      
+      <section>
+        <div class="horizontal-line">
+          <div class="moving-text-container">
+              <div class="moving-text">   Spring Collection    </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-js">
+        <h2 class="visually-hidden">Пиджаки и рубашки</h2>
+        <div class="mm-wrapper"> 
+          <div class="image-wrapper"> 
+            <a href="#">
+              <img src="./img/MaxiMidi/jacket-2x.jpg" alt=""
+              width="600px"
+              height="488px">
+              <div class="image-caption-js">Пиджаки и юбки лен</div>
+            </a>
+          </div>
+          <div class="image-wrapper"> 
+            <a href="#">
+              <img src="./img/MaxiMidi/shirt-2x.jpg" alt=""
+              width="600px"
+              height="488px">
+              <div class="image-caption-js">Рубашки лен</div>
+            </a>
+          </div>
+        </div> 
+      </section>
+
+        <section class="section-new">
+          <div class="option-section">
+            <h2 class="section-name">НОВИНКИ</h2>
+            <div class="button-container">
+              <button class="button-name">просмотреть все</button>
+            </div>
+          </div>
+          <div class="card-section">
+            <ul class="card-list">
+              <li>
+                <div class="image-container">
+                  <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                    <use href="./img/icons.svg#icon-heart"></use>
+                </svg>
+                  <img src="./img/Product/product-1-2x.jpg" alt="Image 1" width="236" height="378">
+                  <p class="overlay">36 38 40 42</p>
+                </div>
+                <div class="text-container">
+                  <h3 class="title">Юбка макси плиссе белая</h3>
+                  <p class="caption">28 000 тг</p>
+                </div>
+              </li>
+              <li>
+                <div class="image-container">
+                  <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                    <use href="./img/icons.svg#icon-heart"></use>
+                </svg>
+                  <img src="./img/Product/product-2-2x.jpg" alt="Image 2" width="236" height="378">
+                  <p class="overlay">уника</p>
+                </div>
+                <div class="text-container">
+                  <h3 class="title">Малиновая кофта однотон</h3>
+                  <p class="caption">18 000 тг</p>
+                </div>
+              </li>
+              <li>
+                <div class="image-container">
+                  <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                    <use href="./img/icons.svg#icon-heart"></use>
+                </svg>
+                  <img src="./img/Product/product-3-2x.jpg" alt="Image 3" width="236" height="378">
+                  <p class="overlay">36 38 40 42</p>
+                </div>
+                <div class="text-container">
+                  <h3 class="title">Пиджак с аксессуаром</h3>
+                  <p class="caption">40 000 тг</p>
+                </div>
+              </li>
+              <li>
+                <div class="image-container">
+                  <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                    <use href="./img/icons.svg#icon-heart"></use>
+                </svg>
+                  <img src="./img/Product/product-4-2x.jpg" alt="Image 4" width="236" height="378">
+                  <p class="overlay">36 38 40 42</p>
+                </div>
+                <div class="text-container">
+                  <h3 class="title">Пиджак в классическом стиле</h3>
+                  <p class="caption">40 000 тг</p>
+                </div>
+              </li>
+              <li>
+                <div class="image-container">
+                  <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                    <use href="./img/icons.svg#icon-heart"></use>
+                </svg>
+                  <img src="./img/Product/product-5-2x.jpg" alt="Image 5" width="236" height="378">
+                  <p class="overlay">36 38 40 42</p>
+                </div>
+                <div class="text-container">
+                  <h3 class="title">Юбки макси плиссе</h3>
+                  <p class="caption">28 000 тг</p>
+                </div>
+              </li>
+            </ul>
+        </section>
+        
+        <section class="section-mm">
+          <h2 class="visually-hidden">ЮБКИ МАКСИ И МИДИ</h2>
+          <div class="mm-wrapper"> 
+            <div class="image-wrapper"> 
+              <a href="#">
+                <img src="./img/MaxiMidi/maxi-2x.jpg" alt=""
+                width="600px"
+                height="488px">
+                <div class="image-caption">МАКСИ</div>
+              </a>
+            </div>
+            <div class="image-wrapper"> 
+              <a href="#">
+                <img src="./img/MaxiMidi/midi-2x.jpg" alt=""
+                width="600px"
+                height="488px">
+                <div class="image-caption">МИДИ</div>
+              </a>
+            </div>
+          </div> 
+        </section>
+        
+        <section class="section-popular">
+          <div class="option-section">
+            <h2 class="section-name">ПОПУЛЯРНОЕ</h2>
+            <div class="button-container">
+              <button class="button-name">просмотреть все</button>
+            </div>
+          </div>
+          <div class="card-section">
+            <ul class="card-list">
+              <li>
+                <div class="image-container">
+                  <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                    <use href="./img/icons.svg#icon-heart"></use>
+                </svg>
+                  <img src="./img/Product/product-6-2x.jpg" alt="Image 1" width="236" height="378">
+                  <p class="overlay">42/44 46/48 50/52</p>
+                </div>
+                <div class="text-container">
+                  <h3 class="title">Кофта Felicita</h3>
+                  <p class="caption">24 000 тг</p>
+                </div>
+              </li>
+              <li>
+                <div class="image-container">
+                  <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                    <use href="./img/icons.svg#icon-heart"></use>
+                </svg>
+                  <img src="./img/Product/product-7-2x.jpg" alt="Image 2" width="236" height="378">
+                  <p class="overlay">36 38 40 42</p>
+                </div>
+                <div class="text-container">
+                  <h3 class="title">Красный пиджак</h3>
+                  <p class="caption">40 000 тг</p>
+                </div>
+              </li>
+              <li>
+                <div class="image-container">
+                  <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                    <use href="./img/icons.svg#icon-heart"></use>
+                </svg>
+                  <img src="./img/Product/product-8-2x.jpg" alt="Image 3" width="236" height="378">
+                  <p class="overlay">36 38 40 42</p>
+                </div>
+                <div class="text-container">
+                  <h3 class="title">Юбка плиссе миди</h3>
+                  <p class="caption">24 000 тг</p>
+                </div>
+              </li>
+              <li>
+                <div class="image-container">
+                  <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                    <use href="./img/icons.svg#icon-heart"></use>
+                </svg>
+                  <img src="./img/Product/product-9-2x.jpg" alt="Image 4" width="236" height="378">
+                  <p class="overlay">36 38 40 42</p>
+                </div>
+                <div class="text-container">
+                  <h3 class="title">Юбка плиссе макси</h3>
+                  <p class="caption">28 000 тг</p>
+                </div>
+              </li>
+              <li>
+                <div class="image-container">
+                  <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                    <use href="./img/icons.svg#icon-heart"></use>
+                </svg>
+                  <img src="./img/Product/product-10-2x.jpg" alt="Image 5" width="236" height="378">
+                  <p class="overlay">36 38 40 42</p>
+                </div>
+                <div class="text-container">
+                  <h3 class="title">Юбка макси</h3>
+                  <p class="caption">20 000 тг</p>
+                </div>
+              </li>
+            </ul>
+        </section>
+
+        <section class="section-carousel">
+          <h2 class="visually-hidden">Образы на неделю</h2>
+          <div class="carousel-wrapper">
+              <div class="carousel-inner">
+                  <div class="carousel-slide">
+                      <img src="./img/Obrazy/obrazy-1-2x.jpg" alt="Зображення 1" width="389" height="488">
+                      <p class="overlay-carousel">ОБРАЗЫ НА НЕДЕЛЮ</p>
+                      <ul class="overlay-carousel-2">
+                        <li>Пиджак в классическом стиле</li>
+                        <li>Кофта песочного цвета</li>
+                        <li>Юбка макси плиссе шоколад</li>
+                      </ul>
+                  </div>
+                  <div class="carousel-slide">
+                      <img src="./img/Obrazy/obrazy-2-2x.jpg" alt="Зображення 2" width="389" height="488">
+                      <p class="overlay-carousel-1">день 2</p>
+                      <ul class="overlay-carousel-2">
+                        <li>Кофта голубого цвета</li>
+                        <li>Юбка макси плиссе голубая</li>
+                      </ul>
+                  </div>
+                  <div class="carousel-slide">
+                      <img src="./img/Obrazy/obrazy-3-2x.jpg" alt="Зображення 3" width="389" height="488">
+                      <p class="overlay-carousel-1">день 3</p>
+                      <ul class="overlay-carousel-2">
+                        <li>Блуза с коротким акцентным рукавом</li>
+                        <li>Классический костюм-двойка</li>
+                      </ul>
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="./img/Obrazy/obrazy-4-2x.jpg" alt="Зображення 4" width="389" height="488">
+                    <p class="overlay-carousel-1">день 4</p>
+                    <ul class="overlay-carousel-2">
+                      <li>Кофта белого цвета</li>
+                      <li>Классический костюм-двойка</li>
+                    </ul>
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="./img/Obrazy/obrazy-5-2x.jpg" alt="Зображення 5" width="389" height="488">
+                    <p class="overlay-carousel-1">день 5</p>
+                    <ul class="overlay-carousel-2">
+                      <li>Кофта песочного цвета</li>
+                      <li>Классический пиджак красный</li>
+                      <li>Юбка макси плиссе красная</li>
+                    </ul>
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="./img/Obrazy/obrazy-6-2x.jpg" alt="Зображення 6" width="389" height="488">
+                    <p class="overlay-carousel-1">день 6</p>
+                    <ul class="overlay-carousel-2">
+                      <li>Кофта беж с коротким рукавом</li>
+                      <li>Юбка французской длины</li>
+                    </ul>
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="./img/Obrazy/obrazy-7-2x.jpg" alt="Зображення 7" width="389" height="488">
+                    <p class="overlay-carousel-1">день 7</p>
+                    <ul class="overlay-carousel-2">
+                      <li>Блуза белая с коротким рукавом</li>
+                      <li>Юбка миди плиссе темно-синяя</li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+          <button class="carousel-control prev">&#10094;</button>
+          <button class="carousel-control next">&#10095;</button>
+      </section>
+      
+      <section class="section-fs">
+        <div class="option-section">
+          <h2 class="section-name">FINAL SALE</h2>
+          <div class="button-container">
+            <button class="button-name">просмотреть все</button>
+          </div>
+        </div>
+        <div class="card-section">
+          <ul class="card-list">
+            <li>
+              <div class="image-container">
+                <svg class="discount-circle" width="50" height="50">
+                  <circle cx="25" cy="25" r="25" fill="var(--main-brand-color)"/>
+                  <text x="25" y="30" text-anchor="middle" font-size="14" fill="black">50%</text>
+                </svg>
+                <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                  <use href="./img/icons.svg#icon-heart"></use>
+              </svg>
+      
+                <img src="./img/Sale/sale-1-2x.jpg" alt="Image 1" width="236" height="378">
+                <p class="overlay">s m l</p>
+              </div>
+              <div class="text-container">
+                <h3 class="title">Твидовый костюм-двойка</h3>
+                <div class="price-container">
+                    <p class="price">63 000 тг</p>
+                    <p class="new-price">31 500 тг</p>
+                </div>
+            </div>
+            </li>
+            <li>
+              <div class="image-container">
+                <svg class="discount-circle" width="50" height="50">
+                  <circle cx="25" cy="25" r="25" fill="var(--main-brand-color)"/>
+                  <text x="25" y="30" text-anchor="middle" font-size="14" fill="black">30%</text>
+                </svg>
+                <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                  <use href="./img/icons.svg#icon-heart"></use>
+              </svg>
+                <img src="./img/Sale/sale-2-2x.jpg" alt="Image 2" width="236" height="378">
+                <p class="overlay">36 38 40 42</p>
+              </div>
+              <div class="text-container">
+                <h3 class="title">Юбка макси</h3>
+                <div class="price-container">
+                    <p class="price">20 000 тг</p>
+                    <p class="new-price">14 000 тг</p>
+                </div>
+            </li>
+            <li>
+              <div class="image-container">
+                <svg class="discount-circle" width="50" height="50">
+                  <circle cx="25" cy="25" r="25" fill="var(--main-brand-color)"/>
+                  <text x="25" y="30" text-anchor="middle" font-size="14" fill="black">30%</text>
+                </svg>
+                <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                  <use href="./img/icons.svg#icon-heart"></use>
+              </svg>
+                <img src="./img/Sale/sale-3-2x.jpg" alt="Image 3" width="236" height="378">
+                <p class="overlay">36 38 40 42</p>
+              </div>
+              <div class="text-container">
+                <h3 class="title">Юбки макси по косой</h3>
+                <div class="price-container">
+                    <p class="price">24 000 тг</p>
+                    <p class="new-price">16 800 тг</p>
+                </div>
+            </li>
+            <li>
+              <div class="image-container">
+                <svg class="discount-circle" width="50" height="50">
+                  <circle cx="25" cy="25" r="25" fill="var(--main-brand-color)"/>
+                  <text x="25" y="30" text-anchor="middle" font-size="14" fill="black">50%</text>
+                </svg>
+                <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                  <use href="./img/icons.svg#icon-heart"></use>
+              </svg>
+                <img src="./img/Sale/sale-4-2x.jpg" alt="Image 4" width="236" height="378">
+                <p class="overlay">s m l xl</p>
+              </div>
+              <div class="text-container">
+                <h3 class="title">Юбка макси плиссе</h3>
+                <div class="price-container">
+                    <p class="price">28 000 тг</p>
+                    <p class="new-price">14 000 тг</p>
+                </div>
+            </li>
+            <li>
+              <div class="image-container">
+                <svg class="discount-circle" width="50" height="50">
+                  <circle cx="25" cy="25" r="25" fill="var(--main-brand-color)"/>
+                  <text x="25" y="30" text-anchor="middle" font-size="14" fill="black">50%</text>
+                </svg>
+                <svg class="svg-icon" width="24" height="24" onclick="toggleColor(event)">
+                  <use href="./img/icons.svg#icon-heart"></use>
+              </svg>
+                <img src="./img/Sale/sale-5-2x.jpg" alt="Image 5" width="236" height="378">
+                <p class="overlay">xs s m l</p>
+              </div>
+              <div class="text-container">
+                <h3 class="title">Блуза с длинным рукавом</h3>
+                <div class="price-container">
+                    <p class="price">26 000 тг</p>
+                    <p class="new-price">13 000 тг</p>
+                </div>
+            </li>
+          </ul>
+      </section>
+      
+    </main>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+              <img src="./img/logo-heder-2.jpg" alt="Логотип" width="52" height="52">
+          </div>
+          <div class="footer-info">
+            <p><span>Подписывайтесь и узнавайте первой</span> <span>про новинки и акции</span></p>
+        </div>
+        <div class="footer-subscribe">
+          <form>
+            <div class="input-wrapper">
+              <input type="email" name="email" id="email" placeholder="введите ваш e-mail">
+              <button type="submit" id="subscribe-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M19 12l-6.4 6.4 1.6 1.6 8-8-8-8-1.6 1.6L19 12z" fill="white"/> <!-- Змінено fill на white -->
+                </svg>
+                
+              </button>
+            </div>
+          </form>
+        </div>
+        
+          <div class="footer-social-contact">
+            <div class="footer-social">
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com//" target="_blank"><svg class="icon-facebook" width="21" height="21"><use href="./img/icons.svg#icon-facebook"></use></svg></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><svg class="icon-instagram" width="21" height="21"><use href="./img/icons.svg#icon-instagram"></use></svg></a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>+7774 621 3224</p>
+            </div>
+        </div>
+        <div class="site-info">
+            <p>&copy; 2023 La Vie. Все права защищены.</p>
+        </div> 
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-menu">
+            <h3 class="footer-name">Каталог</h3>
+            <ul>
+                <li><a href="#">Spring Collection</a></li>
+                <li><a href="#">Макси</a></li>
+                <li><a href="#">Миди</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+        </div>
+        <div class="footer-menu">
+            <h3 class="footer-name">Покупателям</h3>
+            <ul>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+  </footer> 
+
+  <div id="myModal" class="modal"> 
+    <div class="modal-content">
+        <div class="modal-image">
+            <img src="./img/Modal/modal_2x.jpg" alt="юбка и блуза" width="242" height="444">
+        </div>
+        <div class="modal-text">
+            <span class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                </svg>
+            </span>
+            <h2 class="modal-head">Скидки до <span class="modal-head-2">-50%</span></h2>
+            <p class="modal-text-1">На юбки и блузы</p>
+            <p class="modal-text-2">интересные модели по самым приятным ценам</p>
+            <div class="button-container">
+                <button class="button-name">смотреть</button>
+            </div> 
+        </div>     
+    </div>
+</div>
+
+      <script src="./js/modal.js"></script>
+      <script src="./js/bundle.js"></script>
+      <script src="./js/strip_animation.js"></script>
+      <script src="./js/onclick-color-svg.js"></script>
+      <script src="./js/carousel-slider.js"></script>
+      
+</body>
+</html>
