@@ -12,3 +12,4 @@ function toggleColor(event) {
         svgIcon.style.stroke = 'none'; 
     }
 }
+
