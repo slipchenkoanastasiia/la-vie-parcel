@@ -1,0 +1,192 @@
+.faq-container {
+    display: flex;
+    gap: 24px;
+    margin-top: 30px;
+  }
+  
+  .faq-questions {  
+    width: 70%;
+  }
+  
+  .faq-questions ul {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    color: var(--main-text-color);
+    font-weight: 600;
+    font-family: var(--primary-font);
+    margin-bottom: 20px;
+    list-style-type: none !important; 
+    padding: 0 !important; 
+  }
+  
+  .faq-questions ul li {
+    margin: 30px 0px;
+  }
+  
+  .faq-title {
+    font-size: 24px; 
+    line-height: 1.1; 
+    letter-spacing: 0.2px;
+    color: var(--main-text-color);
+    font-family: var(--primary-font); 
+    font-weight: 600;
+    margin-bottom: 20px; 
+    position: relative;
+    text-transform: uppercase; 
+  }
+  
+  .faq-title::after {
+    content: ""; 
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px; 
+    width: 100%;
+    border-top: 1px solid #000; 
+  }
+  
+  .faq-answer {
+    font-size: 14px; 
+    line-height: 1.1; 
+    letter-spacing: 0.2px;
+    color: var(--main-text-color);
+    font-family: var(--primary-font); 
+    font-weight: 400;
+    margin-top: 10px; 
+    max-width: 680px;
+  }
+  
+  .faq-form {
+    width: 30%;
+    background-color: #fff;
+  }
+  
+  .form-title {
+    font-size: 21px;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    color: var(--main-text-color);
+    font-weight: 600;
+    font-family: var(--primary-font);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  
+  .form-subtitle {
+    font-size: 15px; 
+    line-height: 1.1; 
+    color: var(--dark-gray-color);
+    font-family: var(--primary-font);
+    font-weight: 400; 
+    margin-bottom: 10px;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .contact-info svg {
+    display: inline-block;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    color: var(--main-text-color);
+    font-weight: 600;
+    font-family: var(--primary-font);
+    margin: 0;
+  }
+  
+  .form-heading {
+    font-size: 21px;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    color: var(--main-text-color);
+    font-weight: 400;
+    font-family: var(--primary-font);
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--main-text-color); 
+  }
+  
+  .contact-form .name-email-group input[type="text"],
+  .contact-form .name-email-group input[type="email"],
+  .contact-form .name-email-group textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid var(--light-gray-color); 
+    background-color: var(--light-gray-color); 
+    color: var(--main-text-color); 
+    height: 50px; 
+    border-radius: 0; 
+  }
+  
+  .contact-form .name-email-group input[type="email"] {
+    color: var(--main-text-color) !important; 
+  }
+  
+  .contact-form .name-email-group input[type="text"]::placeholder,
+  .contact-form .name-email-group input[type="email"]::placeholder,
+  .contact-form .name-email-group textarea::placeholder {
+    font-size: 14px; 
+    line-height: 0.7; 
+    letter-spacing: 0.3px; 
+    color: var(--main-text-color); 
+    font-weight: 500; 
+    font-family: var(--primary-font); 
+  }
+  
+  .contact-form .name-email-group input[type="text"]::placeholder {
+    color: var(--bg-color); 
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 15px; 
+  }
+  
+  .contact-form .name-email-group {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    margin-bottom: 10px; 
+  }
+  
+  .contact-form .message-container {
+    position: relative;
+  }
+  
+  .contact-form textarea {
+    width: 100%;
+    padding-right: 40px;
+    box-sizing: border-box;
+    border-radius: 0;
+  }
+  
+  .contact-form .submit-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer;
+  }
+  
+  .contact-form .submit-btn svg {
+    fill: var(--main-text-color);
+  }
+  
+
+/*# sourceMappingURL=/question.3938733f.css.map */
