@@ -59,9 +59,12 @@ WhatsApp — можливість звернутися до служби під�
 Футер: пункти меню, підписка на email-розсилку, телефон, адреса, політика конфіденційності, мова сайту. 
 
 Респонсивно-адаптивний дизайн
-<video src="docs/screenshots/adapt_media.mp4" controls width="600">
-  Your browser does not support the video tag.
-</video>
+
+<div style="max-width: 100%; overflow: hidden;">
+  <video src="docs/screenshots/adapt_media.mp4" controls style="width: 100%; height: auto;">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ## ✨ Особливості
 
